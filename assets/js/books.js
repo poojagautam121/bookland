@@ -17,3 +17,7 @@ function fetchBook() {
     },
   });
 }
+
+function backToHome() {
+  window.location = "http://localhost:1300/";
+}

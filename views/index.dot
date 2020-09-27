@@ -6,9 +6,13 @@ layout : layout.dot
 
 
    <form action="/fetchBook" method="post">
-  <input type=text id="book" name ="book" value="" placeholder="Search for Books" maxlength="100">
-  <button  onclick="fetchBook()">Search </button>
-
+   <div class="form-group">
+   <label for="formGroupExampleInput">Enter Book Name</label>
+  <input type=text class="form-control" id="book" name ="book" value="" placeholder="Search for Books" maxlength="100">
+  </div>
+   <div class="form-group">
+  <button  class="btn btn-primary" onclick="fetchBook()">Search </button>
+</div>
 </form>
 
  #]]
@@ -27,5 +31,9 @@ function fetchBook() {
   </style>
 
     <!-- END PAGE LEVEL SCRIPTS -->#}}
+
+    {{##pageCSS: <!-- View CSS-->
+            <link rel="stylesheet" href="/stylesheet/style.css"> 
+  #}}
 
    

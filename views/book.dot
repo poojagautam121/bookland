@@ -4,6 +4,7 @@ layout : layout.dot
 
 [[##body:
 
+  <button  class="btn btn-primary" onclick="backToHome()">Back To Home Page </button>
 
 <h1>Book Detail</h1>
 <table class="table" >
