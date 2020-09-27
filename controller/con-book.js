@@ -8,7 +8,7 @@ const api_key = "AIzaSyDfZ0w7PT1H4d93MP9O1TJDbIGF6lflPnc";
 
 exports.getBook = async (req, res) => {
   console.log("inside fun======", req.body);
-  const querystring = `?q=${req.body.book}&key=${api_key}`;
+  const querystring = `?q=${req.body.book}+intitle:${req.body.book}&key=${api_key}`;
   const response = await fetch(api_url + querystring);
 
   const result = await response.json();

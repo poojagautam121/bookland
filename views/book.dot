@@ -10,11 +10,11 @@ layout : layout.dot
 <table class="table" >
  <thead class="thead-dark">
   <tr> 
-   <th>ID</th>  
   <th>Title</th>
     <th scope="col">Publisher</th>
     <th scope="col">Published Date</th>
       <th scope="col">Description</th>
+      <th scope="col"> Review/Rating
 
   </tr>
 </thead>
@@ -23,11 +23,11 @@ layout : layout.dot
  [[~ model.result : temp]]
  
   <tr>
-    <td scope="row">[[=temp.id ]]</td>
    <td>[[=temp.volumeInfo.title ]]</td>
-    <td>[[=temp.volumeInfo.publisher ]]</td>
-    <td>[[=temp.volumeInfo.publishedDate ]]</td>
-  <td>[[=temp.volumeInfo.description ]]</td>
+    <td>[[=temp.volumeInfo.publisher == undefined ? '' : temp.volumeInfo.publisher ]]</td>
+    <td>[[=temp.volumeInfo.publishedDate  == undefined ? '' : temp.volumeInfo.publishedDate]]</td>
+  <td>[[=temp.volumeInfo.description == undefined ? '' : temp.volumeInfo.description]]</td>
+  <td style="align:center"> [[=temp.volumeInfo.ratingsCount == undefined ? '' : temp.volumeInfo.ratingsCount]]</td>
   </tr>
  
 [[~]]
