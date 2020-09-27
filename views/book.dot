@@ -11,9 +11,11 @@ layout : layout.dot
  <thead class="thead-dark">
   <tr> 
    <th>ID</th>  
-  <th>kind</th>
-    <th scope="col">selfLink</th>
-    <th scope="col">etag</th>
+  <th>Title</th>
+    <th scope="col">Publisher</th>
+    <th scope="col">Published Date</th>
+      <th scope="col">Description</th>
+
   </tr>
 </thead>
 <tbody>
@@ -22,10 +24,10 @@ layout : layout.dot
  
   <tr>
     <td scope="row">[[=temp.id ]]</td>
-   <td>[[=temp.kind ]]</td>
-    <td>[[=temp.selfLink ]]</td>
-    <td>[[=temp.etag ]]</td>
- 
+   <td>[[=temp.volumeInfo.title ]]</td>
+    <td>[[=temp.volumeInfo.publisher ]]</td>
+    <td>[[=temp.volumeInfo.publishedDate ]]</td>
+  <td>[[=temp.volumeInfo.description ]]</td>
   </tr>
  
 [[~]]
