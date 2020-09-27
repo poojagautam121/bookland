@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>BookLand</title>
+<link rel="stylesheet" href="/stylesheets/style.css" >
+</head>
+<body>
+<h1 class="book">
+Welcome to BookLand
+</h1>
+
+ <script type="text/javascripts" src="/js/bootstrap.js"></script>
+  <script type="text/javascript " src="/js/books.js" charset="UTF-8"></script>
+       <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css">
+
+       
+
+[[=layout.body]]
+</body>
+</html>

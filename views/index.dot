@@ -1,0 +1,31 @@
+---
+layout : layout.dot
+---
+
+[[##body:
+
+
+   <form action="/fetchBook" method="post">
+  <input type=text id="book" name ="book" value="" placeholder="Search for Books" maxlength="100">
+  <button  onclick="fetchBook()">Search </button>
+
+</form>
+
+ #]]
+
+
+
+{{##pageScripts:
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+     <script type="text/javascript " src="/js/books.js" charset="UTF-8"></script>
+
+   <style>
+function fetchBook() {
+  console.log("==========");
+}
+
+  </style>
+
+    <!-- END PAGE LEVEL SCRIPTS -->#}}
+
+   
