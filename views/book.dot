@@ -11,26 +11,39 @@ layout : layout.dot
  <thead class="thead-dark">
   <tr> 
   <th>Title</th>
+  <th> Image</th>
     <th scope="col">Publisher</th>
     <th scope="col">Published Date</th>
       <th scope="col">Description</th>
-      <th scope="col"> Review/Rating
+      <th scope="col"> Review/ Rating </th>
 
   </tr>
 </thead>
 <tbody>
 
  [[~ model.result : temp]]
- 
+ [[? model.result.length > 0]]
   <tr>
+   
    <td>[[=temp.volumeInfo.title ]]</td>
+   <td><img src=[[=temp.volumeInfo.imageLinks.smallThumbnail]] alt="image" width="100" height="100">
+   </td>
     <td>[[=temp.volumeInfo.publisher == undefined ? '' : temp.volumeInfo.publisher ]]</td>
     <td>[[=temp.volumeInfo.publishedDate  == undefined ? '' : temp.volumeInfo.publishedDate]]</td>
   <td>[[=temp.volumeInfo.description == undefined ? '' : temp.volumeInfo.description]]</td>
   <td style="align:center"> [[=temp.volumeInfo.ratingsCount == undefined ? '' : temp.volumeInfo.ratingsCount]]</td>
+    
+
   </tr>
- 
+     [[?]]
+
 [[~]]
+[[? model.result.length == 0]] 
+<tr>
+<td>No Record Found</td>
+   
+</tr>
+  [[?]]
   </tbody>
 </table>
 

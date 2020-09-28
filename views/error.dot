@@ -1,9 +1,9 @@
-<!---
-extends layout
+---
+layout : layout.dot
+---
 
-block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
-
-  -->
+[[##body: 
+ <button  class="btn btn-primary" onclick="backToHome()">Back To Home Page </button>
+<br>
+<h4 style="align:center">No Record Found</h4>
+#]]

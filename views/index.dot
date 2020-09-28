@@ -6,12 +6,12 @@ layout : layout.dot
 
 
    <form action="/fetchBook" method="post">
-   <div class="form-group">
+   <div class="form-group align">
    <label for="formGroupExampleInput">Enter Book Name</label>
   <input type=text class="form-control" id="book" name ="book" value="" placeholder="Search for Books" maxlength="100">
   </div>
    <div class="form-group">
-  <button  class="btn btn-primary" onclick="fetchBook()">Search </button>
+  <button  class="btn btn-primary align" onclick="fetchBook()">Search </button>
 </div>
 </form>
 
@@ -24,9 +24,7 @@ layout : layout.dot
      <script type="text/javascript " src="/js/books.js" charset="UTF-8"></script>
 
    <style>
-function fetchBook() {
-  console.log("==========");
-}
+
 
   </style>
 

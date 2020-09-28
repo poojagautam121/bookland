@@ -9,7 +9,6 @@ var usersRouter = require("./routes/users");
 var engine = require("express-dot-engine");
 
 var app = express();
-//let config = require("./config/config");
 
 // view engine setup;
 app.engine("dot", engine.__express);

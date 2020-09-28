@@ -16,3 +16,7 @@ btn {
   font-size: 50px;
   text-align: center;
 }
+
+.align {
+  align-content: center;
+}

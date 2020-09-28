@@ -1,5 +1,4 @@
 function fetchBook() {
-  console.log("==========book valuw ======");
   $.ajax({
     type: "POST",
     url: `/fetchBook`,
